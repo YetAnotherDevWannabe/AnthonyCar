@@ -38,7 +38,6 @@ function checkForm() {
 
 	for (let i = 0; i < fieldArray.length; i++)
 	{
-		console.log( $(fieldArray[i]).val().length );
 
 		if (i == 0)
 		{ // Firstname && Lastname

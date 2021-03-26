@@ -3,6 +3,13 @@ body
 	background-color: #ffffff;
 }
 
+.logo
+{
+	/*background-image: url("../img/logo.png");*/
+	background:url(../img/logo.png) no-repeat center;
+
+}
+
 #carList>div>figure>img
 {
 	cursor: zoom-in;
