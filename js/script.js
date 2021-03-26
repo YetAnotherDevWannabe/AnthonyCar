@@ -1,7 +1,26 @@
-$('#formSubmit').click(function (e)
-{
-	e.preventDefault();	// Prevent form from refreshing page
 
+
+
+
+$('#top-nav>ul').first().click(function () {
+
+
+
+})
+
+$('#top-nav>ul').click(function () {
+
+
+
+})
+
+$('#top-nav>ul').first().click(function () {
+
+
+
+})
+
+$('#top-nav>ul').last().click(function () {
 
 
 
