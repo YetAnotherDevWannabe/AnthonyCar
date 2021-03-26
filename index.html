@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body data-spy="scroll" data-target="#topNav" data-offset="0">
+<body>
 
 <div class="container-fluid">
 
@@ -24,9 +24,9 @@
 
 		<!--Menu-->
 		<div class="row">
-			<div class="col-12 my-3 navbar-light bg-light ">
+			<div class="col-12 my-3">
 
-				<nav id="top-nav" class="col-12 navbar flex-column text-center flex-md-row justify-content-md-end navbar-light bg-light">
+				<nav id="top-nav" class="col-12 navbar flex-column text-center flex-md-row justify-content-md-end">
 					<ul class="nav nav-pills flex-column flex-md-row">
 						<li class="nav-item"><a href="#presentation" class="nav-link active me-1 mb-1">Présentation</a></li>
 						<li class="nav-item"><a href="#carList" class="nav-link active me-1 mb-1">Liste des véhicules</a></li>
@@ -53,7 +53,7 @@
 		<!--Presentation-->
 		<div id="presentation" class="row">
 			<div class="col-12 col-md-8 offset-md-2 my-3 text-start text-md-center">
-				<p>
+				<p id="hiddenText" class="hiddenClass">
 					Bienvenu chez Anthony Car, entreprise de location de voiture française. Elle est à la fois une entreprise familiale et internationale.
 					Créée en 1976 par Anthony avec seulement 2 voitures, aujourd’hui nous vous offrons nos services dans plus de 30 pays à travers le monde.
 					Anthony Car s’engage à vous offrir un service premium et une voiture de location qui vous conviennent.
@@ -70,6 +70,7 @@
 
 				<figure class="figure">
 					<img
+						data-image="voiture1.jpg"
 						src="img/voiture1.jpg"
 						class="w-100 shadow-1-strong rounded-top"
 						alt=""
@@ -80,6 +81,7 @@
 
 				<figure class="figure">
 					<img
+						data-image="voiture2.jpg"
 						src="img/voiture2.jpg"
 						class="w-100 shadow-1-strong rounded"
 						alt=""
@@ -91,6 +93,7 @@
 			<div class="col-12 col-md-6">
 				<figure class="figure">
 					<img
+						data-image="voiture3.jpg"
 						src="img/voiture3.jpg"
 						class="w-100 shadow-1-strong rounded"
 						alt=""
@@ -100,6 +103,7 @@
 
 				<figure class="figure">
 					<img
+						data-image="voiture4.jpg"
 						src="img/voiture4.jpg"
 						class="w-100 shadow-1-strong rounded"
 						alt=""
@@ -111,6 +115,7 @@
 			<div class="col-12 col-md-6 offset-md-3">
 				<figure class="figure">
 					<img
+						data-image="voiture5.jpg"
 						src="img/voiture5.jpg"
 						class="w-100 shadow-1-strong rounded"
 						alt=""
@@ -192,7 +197,6 @@
 
 <script src="js/lib/bootstrap-5.0.0b3.bundle.min.js"></script>  <!-- Includes Bootstrap & Popper from local file -->
 <script src="js/lib/jquery-3.6.0.min.js"></script> <!-- Includes jQuery from local file -->
-<script src="js/script.js"></script>
 <script src="js/gallery.js"></script>
 <script src="js/form.js"></script>
 </body>
