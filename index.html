@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#topNav" data-offset="0">
 
 <div class="container-fluid">
 
@@ -24,19 +24,24 @@
 
 		<!--Menu-->
 		<div class="row">
-			<div class="col-md-12 my-3">
+			<div class="col-12 my-3 navbar-light bg-light ">
 
-				<nav>
-					<ul class="nav flex-column flex-md-row text-center justify-content-md-end nav-pills">
-						<li class="nav-item"><a href="#" class="nav-link active" >Présentation</a></li>
-						<li class="nav-item"><a href="#" class="nav-link" >Liste des véhicules</a></li>
-						<li class="nav-item"><a href="#" class="nav-link" >Formulaire de contact</a></li>
-						<li class="nav-item"><a href="#" class="nav-link" >Trouvez-nous facilement</a></li>
+				<nav id="top-nav" class="col-12 navbar flex-column text-center flex-md-row justify-content-md-end navbar-fixed-top position-fixed top-0 start-0 navbar-light bg-light">
+					<ul class="nav nav-pills flex-column flex-md-row">
+						<li class="nav-item"><a href="#presentation" class="nav-link active me-1">Présentation</a></li>
+						<li class="nav-item"><a href="#carList" class="nav-link me-1">Liste des véhicules</a></li>
+						<li class="nav-item"><a href="#form" class="nav-link me-1">Formulaire de contact</a></li>
+						<li class="nav-item"><a href="#find-us" class="nav-link">Trouvez-nous facilement</a></li>
 					</ul>
 				</nav>
 
 			</div>
 		</div>
+
+	</header>
+
+	<!--Auto-scroll for #navTop-->
+	<div >
 
 		<!--Image top-->
 		<div class="row bg-secondary rounded">
@@ -45,153 +50,153 @@
 			</div>
 		</div>
 
-	</header>
+		<main>
 
-	<main>
-
-		<!--Presentation-->
-		<div class="row">
-			<div class="col-12 col-md-8 offset-md-2 my-3 text-start text-md-center">
-				<p>
-					Bienvenu chez Anthony Car, entreprise de location de voiture française. Elle est à la fois une entreprise familiale et internationale.
-					Créée en 1976 par Anthony avec seulement 2 voitures, aujourd’hui nous vous offrons nos services dans plus de 30 pays à travers le monde.
-					Anthony Car s’engage à vous offrir un service premium et une voiture de location qui vous conviennent.
-					Notre personnel hautement qualifié fera tout pour satisfaire vos envies et vos besoins.
-					Que vous ayez besoin d'une petite voiture, d’une voiture compacte ou d’un break spacieux, notre flotte vous propose des véhicules neufs, en moyenne six mois d’ancienneté, de grandes marques telles que BMW, Audi, VW et Mercedes-Benz.
-				</p>
-			</div>
-		</div>
-
-		<!--Galerie-->
-		<div class="row bg-secondary rounded py-3">
-
-			<div class="col-12 col-md-6">
-
-				<figure class="figure">
-					<img
-						src="img/voiture1.jpg"
-						class="w-100 shadow-1-strong rounded-top"
-						alt=""
-					/>
-					<figcaption class="figure-caption alert-success text-end rounded-bottom pe-1">Renault - Clio (Essence)<br>50€/jour</figcaption>
-				</figure>
-
-
-				<figure class="figure">
-					<img
-						src="img/voiture2.jpg"
-						class="w-100 shadow-1-strong rounded"
-						alt=""
-					/>
-					<figcaption class="figure-caption alert-success text-end rounded-bottom pe-1">Peugeot - 3008 GT (Essence)<br>95€/jour</figcaption>
-				</figure>
+			<!--Presentation-->
+			<div id="presentation" class="row">
+				<div class="col-12 col-md-8 offset-md-2 my-3 text-start text-md-center">
+					<p>
+						Bienvenu chez Anthony Car, entreprise de location de voiture française. Elle est à la fois une entreprise familiale et internationale.
+						Créée en 1976 par Anthony avec seulement 2 voitures, aujourd’hui nous vous offrons nos services dans plus de 30 pays à travers le monde.
+						Anthony Car s’engage à vous offrir un service premium et une voiture de location qui vous conviennent.
+						Notre personnel hautement qualifié fera tout pour satisfaire vos envies et vos besoins.
+						Que vous ayez besoin d'une petite voiture, d’une voiture compacte ou d’un break spacieux, notre flotte vous propose des véhicules neufs, en moyenne six mois d’ancienneté, de grandes marques telles que BMW, Audi, VW et Mercedes-Benz.
+					</p>
+				</div>
 			</div>
 
-			<div class="col-12 col-md-6">
-				<figure class="figure">
-					<img
-						src="img/voiture3.jpg"
-						class="w-100 shadow-1-strong rounded"
-						alt=""
-					/>
-					<figcaption class="figure-caption alert-warning text-end rounded-bottom pe-1">Mercedes - Classe A (Diesel)<br>150€/jour</figcaption>
-				</figure>
+			<!--Galerie-->
+			<div id="carList" class="row bg-secondary rounded py-3">
 
-				<figure class="figure">
-					<img
-						src="img/voiture4.jpg"
-						class="w-100 shadow-1-strong rounded"
-						alt=""
-					/>
-					<figcaption class="figure-caption alert-success text-end rounded-bottom pe-1">BMW - M3 (Essence)<br>500€/jour</figcaption>
-				</figure>
-			</div>
+				<div class="col-12 col-md-6">
 
-			<div class="col-12 col-md-6 offset-md-3">
-				<figure class="figure">
-					<img
-						src="img/voiture5.jpg"
-						class="w-100 shadow-1-strong rounded"
-						alt=""
-					/>
-					<figcaption class="figure-caption alert-primary text-end rounded-bottom pe-1">Fiat - Chronos (Electrique)<br>5€/jour</figcaption>
-				</figure>
-			</div>
+					<figure class="figure">
+						<img
+							src="img/voiture1.jpg"
+							class="w-100 shadow-1-strong rounded-top"
+							alt=""
+						/>
+						<figcaption class="figure-caption alert-success text-end rounded-bottom pe-1">Renault - Clio (Essence)<br>50€/jour</figcaption>
+					</figure>
 
-		</div>
 
-		<!--Form-->
-		<div class="row">
-			<div class="col-12 col-md-6 offset-md-3 my-3">
+					<figure class="figure">
+						<img
+							src="img/voiture2.jpg"
+							class="w-100 shadow-1-strong rounded"
+							alt=""
+						/>
+						<figcaption class="figure-caption alert-success text-end rounded-bottom pe-1">Peugeot - 3008 GT (Essence)<br>95€/jour</figcaption>
+					</figure>
+				</div>
 
-				<form action="index.html" method="get">
+				<div class="col-12 col-md-6">
+					<figure class="figure">
+						<img
+							src="img/voiture3.jpg"
+							class="w-100 shadow-1-strong rounded"
+							alt=""
+						/>
+						<figcaption class="figure-caption alert-warning text-end rounded-bottom pe-1">Mercedes - Classe A (Diesel)<br>150€/jour</figcaption>
+					</figure>
 
-					<fieldset>
-						<legend>Formulaire</legend>
+					<figure class="figure">
+						<img
+							src="img/voiture4.jpg"
+							class="w-100 shadow-1-strong rounded"
+							alt=""
+						/>
+						<figcaption class="figure-caption alert-success text-end rounded-bottom pe-1">BMW - M3 (Essence)<br>500€/jour</figcaption>
+					</figure>
+				</div>
 
-						<!--Prénom-->
-						<div class="form-group">
-							<label for="firstname">Prénom :</label>
-							<input type="text" id="firstname" name="formFirstname" class="form-control mt-2" placeholder="Ex : Anthony">
-						</div>
-
-						<!--Nom-->
-						<div class="form-group">
-							<label for="lastname">Nom :</label>
-							<input type="text" id="lastname" name="formLastname" class="form-control mt-2" placeholder="Ex : Demon">
-						</div>
-
-						<!--email-->
-						<div class="form-group">
-							<label for="email">Email :</label>
-							<input type="text" id="email" name="formEmail" class="form-control mt-2" placeholder="Ex : superprof@anthony-demon.com">
-						</div>
-
-						<!--tel-->
-						<div class="form-group">
-							<label for="phone">Téléphone :</label>
-							<input type="text" id="phone" name="formPhone" class="form-control mt-2" placeholder="Ex : 01.23.45.67.89">
-						</div>
-
-						<!--sujet-->
-						<div class="form-group">
-							<label for="subject">Sujet :</label>
-							<input type="text" id="subject" name="formSubject" class="form-control mt-2" placeholder="Ex : Je me fais c****">
-						</div>
-
-						<!--message-->
-						<div class="form-group">
-							<label for="comment">Message :</label>
-							<textarea id="comment" name="formComment" cols="30" rows="10" class="form-control mt-2" placeholder="Ex : Faites appel a moi je m'ennuie"></textarea>
-						</div>
-
-						<!--boutons-->
-						<div class="form-group">
-							<input type="reset" id="formReset" class="btn btn-danger col-12 my-2" value="Effacer">
-							<input type="submit" id="formSubmit" class="btn btn-primary col-12" value="Envoyer">
-						</div>
-
-					</fieldset>
-
-				</form>
+				<div class="col-12 col-md-6 offset-md-3">
+					<figure class="figure">
+						<img
+							src="img/voiture5.jpg"
+							class="w-100 shadow-1-strong rounded"
+							alt=""
+						/>
+						<figcaption class="figure-caption alert-primary text-end rounded-bottom pe-1">Fiat - Chronos (Electrique)<br>5€/jour</figcaption>
+					</figure>
+				</div>
 
 			</div>
-		</div>
 
-		<!--iFrame gmap-->
-		<div class="row bg-secondary rounded">
-			<div class="col-12 col-md-6 offset-md-3 my-3">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26915.764912631108!2d7.0734129019069405!3d43.5623408406877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb09e525e54519f6!2sCarGo%20Location%20de%20v%C3%A9hicules%20Vallauris!5e0!3m2!1sfr!2sfr!4v1616747195580!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="rounded"></iframe>
+			<!--Form-->
+			<div id="form" class="row">
+				<div class="col-12 col-md-6 offset-md-3 my-3">
+
+					<form action="index.html" method="get">
+
+						<fieldset>
+							<legend>Formulaire</legend>
+
+							<!--Prénom-->
+							<div class="form-group">
+								<label for="firstname">Prénom :</label>
+								<input type="text" id="firstname" name="formFirstname" class="form-control mt-2" placeholder="Ex : Anthony">
+							</div>
+
+							<!--Nom-->
+							<div class="form-group">
+								<label for="lastname">Nom :</label>
+								<input type="text" id="lastname" name="formLastname" class="form-control mt-2" placeholder="Ex : Demon">
+							</div>
+
+							<!--email-->
+							<div class="form-group">
+								<label for="email">Email :</label>
+								<input type="text" id="email" name="formEmail" class="form-control mt-2" placeholder="Ex : superprof@anthony-demon.com">
+							</div>
+
+							<!--tel-->
+							<div class="form-group">
+								<label for="phone">Téléphone :</label>
+								<input type="text" id="phone" name="formPhone" class="form-control mt-2" placeholder="Ex : 01.23.45.67.89">
+							</div>
+
+							<!--sujet-->
+							<div class="form-group">
+								<label for="subject">Sujet :</label>
+								<input type="text" id="subject" name="formSubject" class="form-control mt-2" placeholder="Ex : Je me fais c****">
+							</div>
+
+							<!--message-->
+							<div class="form-group">
+								<label for="comment">Message :</label>
+								<textarea id="comment" name="formComment" cols="30" rows="10" class="form-control mt-2" placeholder="Ex : Faites appel a moi je m'ennuie"></textarea>
+							</div>
+
+							<!--boutons-->
+							<div class="form-group">
+								<input type="reset" id="formReset" class="btn btn-danger col-12 my-2" value="Effacer">
+								<input type="submit" id="formSubmit" class="btn btn-primary col-12" value="Envoyer">
+							</div>
+
+						</fieldset>
+
+					</form>
+
+				</div>
 			</div>
-		</div>
 
-	</main>
+			<!--iFrame gmap-->
+			<div id="find-us" class="row bg-secondary rounded">
+				<div class="col-12 col-md-6 offset-md-3 my-3">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26915.764912631108!2d7.0734129019069405!3d43.5623408406877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb09e525e54519f6!2sCarGo%20Location%20de%20v%C3%A9hicules%20Vallauris!5e0!3m2!1sfr!2sfr!4v1616747195580!5m2!1sfr!2sfr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="rounded w-100 h-100"></iframe>
+				</div>
+			</div>
 
+		</main>
+
+	</div>
 
 </div>
 
 <script src="js/lib/bootstrap-5.0.0b3.bundle.min.js"></script>  <!-- Includes Bootstrap & Popper from local file -->
 <script src="js/lib/jquery-3.6.0.min.js"></script> <!-- Includes jQuery from local file -->
+<script src="js/script.js"></script>
 <script src="js/gallery.js"></script>
 <script src="js/form.js"></script>
 </body>

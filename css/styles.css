@@ -2,3 +2,9 @@ body
 {
 	background-color: #ffffff;
 }
+
+#carList>div>figure>img
+{
+	cursor: zoom-in;
+}
+
